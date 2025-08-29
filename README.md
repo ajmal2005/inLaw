@@ -43,11 +43,15 @@ An open-source tool that flags problematic clauses in legal contracts using NLP 
 5. *Annotation  
    Highlights clauses with potential issues and provides brief explanations or suggestions.
 
----
+
+Setup OpenRouter API Key and add it to the .env file
 
 ## 📦 Installation
 
 ```bash
 git clone https://github.com/ajmal2005/inLaw.git
 cd inLaw
-pip install -r requirements.txt
+python -m venv venv  # create a new virtual environment locally
+source venv/bin/activate  # activate it (Linux/macOS) or .\venv\Scripts\activate (Windows)
+pip install -r requirements.txt  # install the dependencies
+streamlit run app.py
